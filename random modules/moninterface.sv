@@ -1,6 +1,6 @@
-interface monInterface (
-                        input logic clk, rst
+interface monInterface (input logic clk, rst
                         );
+
 logic [7:0] Data ;
 logic Sel ;
 
