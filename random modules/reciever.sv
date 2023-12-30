@@ -1,5 +1,5 @@
 module receiver(
-    monInterface.master if_mst,
+    monInterface.master if_mst, // we can note moninterface if_mst, or interface if_mst, depending on the level of verefication we want at compilatio
     output logic[7:0] data);
 
 logic [1:0] cmpt ;
