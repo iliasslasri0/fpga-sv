@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2023.2_1 2023.05, May 12 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/src
+vMEDIAN
+2../synthese/MEDIAN_pr.v
+!s110 1703939100
+!i10b 1
+!s100 dQ?EGRCMKe<P1RSIE0Ymb2
+IQlfb:dCa=8f>4eCkXFVJK0
+R0
+w1703938893
+8../synthese/MEDIAN_pr.v
+F../synthese/MEDIAN_pr.v
+!i122 1
+L0 6 3181
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.2_1;77
+r1
+!s85 0
+31
+!s108 1703939100.000000
+!s107 ../synthese/MEDIAN_pr.v|
+!s90 +acc|+define+cyclonev|../synthese/MEDIAN_pr.v|
+!i113 0
+o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 +acc +define+cyclonev -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
+n@m@e@d@i@a@n

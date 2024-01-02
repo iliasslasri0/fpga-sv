@@ -1,0 +1,2095 @@
+{
+  "creator": "Yosys 0.36+40 (git sha1 449e3dbbd, clang 14.0.6 -fPIC -Os)",
+  "modules": {
+    "$paramod$35b6c50ff1da35637c32669d8c299c654663931a\\MED": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "\\MED",
+        "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:1.1-36.10"
+      },
+      "parameter_default_values": {
+        "NMBR": "00000000000000000000000000001001",
+        "TAILLE": "00000000000000000000000000001000"
+      },
+      "ports": {
+        "BYP": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "DSI": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "DI": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "DO": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20 ]
+        }
+      },
+      "cells": {
+        "$procdff$213": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 21, 22, 23, 24, 25, 26, 27, 28 ],
+            "Q": [ 29, 30, 31, 32, 33, 34, 35, 36 ]
+          }
+        },
+        "$procdff$214": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 29, 30, 31, 32, 33, 34, 35, 36 ],
+            "Q": [ 37, 38, 39, 40, 41, 42, 43, 44 ]
+          }
+        },
+        "$procdff$215": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 37, 38, 39, 40, 41, 42, 43, 44 ],
+            "Q": [ 45, 46, 47, 48, 49, 50, 51, 52 ]
+          }
+        },
+        "$procdff$216": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 45, 46, 47, 48, 49, 50, 51, 52 ],
+            "Q": [ 53, 54, 55, 56, 57, 58, 59, 60 ]
+          }
+        },
+        "$procdff$217": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 53, 54, 55, 56, 57, 58, 59, 60 ],
+            "Q": [ 61, 62, 63, 64, 65, 66, 67, 68 ]
+          }
+        },
+        "$procdff$218": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 61, 62, 63, 64, 65, 66, 67, 68 ],
+            "Q": [ 69, 70, 71, 72, 73, 74, 75, 76 ]
+          }
+        },
+        "$procdff$219": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 69, 70, 71, 72, 73, 74, 75, 76 ],
+            "Q": [ 77, 78, 79, 80, 81, 82, 83, 84 ]
+          }
+        },
+        "$procdff$220": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 77, 78, 79, 80, 81, 82, 83, 84 ],
+            "Q": [ 85, 86, 87, 88, 89, 90, 91, 92 ]
+          }
+        },
+        "$procdff$221": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 12 ],
+            "D": [ 93, 94, 95, 96, 97, 98, 99, 100 ],
+            "Q": [ 13, 14, 15, 16, 17, 18, 19, 20 ]
+          }
+        },
+        "$procmux$205": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:26.8-26.11|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:26.5-29.27"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101, 102, 103, 104, 105, 106, 107, 108 ],
+            "B": [ 85, 86, 87, 88, 89, 90, 91, 92 ],
+            "S": [ 2 ],
+            "Y": [ 93, 94, 95, 96, 97, 98, 99, 100 ]
+          }
+        },
+        "$procmux$208": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:20.9-20.12|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:20.5-23.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109, 110, 111, 112, 113, 114, 115, 116 ],
+            "B": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+            "S": [ 3 ],
+            "Y": [ 21, 22, 23, 24, 25, 26, 27, 28 ]
+          }
+        },
+        "mce0": {
+          "hide_name": 0,
+          "type": "$paramod\\MCE\\TAILLE=s32'00000000000000000000000000001000",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "MAX": "output",
+            "MIN": "output"
+          },
+          "connections": {
+            "A": [ 85, 86, 87, 88, 89, 90, 91, 92 ],
+            "B": [ 13, 14, 15, 16, 17, 18, 19, 20 ],
+            "MAX": [ 101, 102, 103, 104, 105, 106, 107, 108 ],
+            "MIN": [ 109, 110, 111, 112, 113, 114, 115, 116 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\R[0][7:0]": {
+          "hide_name": 1,
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          }
+        },
+        "$0\\R[8][7:0]": {
+          "hide_name": 1,
+          "bits": [ 93, 94, 95, 96, 97, 98, 99, 100 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:14.1-31.4"
+          }
+        },
+        "BYP": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:2.25-2.28"
+          }
+        },
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:5.25-5.28"
+          }
+        },
+        "DI": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:4.38-4.40"
+          }
+        },
+        "DO": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:6.39-6.41"
+          }
+        },
+        "DSI": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:3.25-3.28"
+          }
+        },
+        "R[0]": {
+          "hide_name": 0,
+          "bits": [ 29, 30, 31, 32, 33, 34, 35, 36 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[1]": {
+          "hide_name": 0,
+          "bits": [ 37, 38, 39, 40, 41, 42, 43, 44 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[2]": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47, 48, 49, 50, 51, 52 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[3]": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 55, 56, 57, 58, 59, 60 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[4]": {
+          "hide_name": 0,
+          "bits": [ 61, 62, 63, 64, 65, 66, 67, 68 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[5]": {
+          "hide_name": 0,
+          "bits": [ 69, 70, 71, 72, 73, 74, 75, 76 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[6]": {
+          "hide_name": 0,
+          "bits": [ 77, 78, 79, 80, 81, 82, 83, 84 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[7]": {
+          "hide_name": 0,
+          "bits": [ 85, 86, 87, 88, 89, 90, 91, 92 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "R[8]": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:10.20-10.21"
+          }
+        },
+        "_MAX": {
+          "hide_name": 0,
+          "bits": [ 101, 102, 103, 104, 105, 106, 107, 108 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:9.20-9.24"
+          }
+        },
+        "_MIN": {
+          "hide_name": 0,
+          "bits": [ 109, 110, 111, 112, 113, 114, 115, 116 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:9.26-9.30"
+          }
+        }
+      }
+    },
+    "$paramod\\MCE\\TAILLE=s32'00000000000000000000000000001000": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "\\MCE",
+        "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:1.1-9.10"
+      },
+      "parameter_default_values": {
+        "TAILLE": "00000000000000000000000000001000"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "MAX": {
+          "direction": "output",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25 ]
+        },
+        "MIN": {
+          "direction": "output",
+          "bits": [ 26, 27, 28, 29, 30, 31, 32, 33 ]
+        }
+      },
+      "cells": {
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6$42": {
+          "hide_name": 1,
+          "type": "$gt",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$ternary$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6$43": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.22-6.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "B": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "S": [ 34 ],
+            "Y": [ 18, 19, 20, 21, 22, 23, 24, 25 ]
+          }
+        },
+        "$ternary$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:7$45": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:7.22-7.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "S": [ 34 ],
+            "Y": [ 26, 27, 28, 29, 30, 31, 32, 33 ]
+          }
+        }
+      },
+      "netnames": {
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6$42_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26"
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:2.33-2.34"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:2.36-2.37"
+          }
+        },
+        "MAX": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:3.33-3.36"
+          }
+        },
+        "MIN": {
+          "hide_name": 0,
+          "bits": [ 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:3.38-3.41"
+          }
+        }
+      }
+    },
+    "MEDIAN": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:1.1-88.10"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "nRST": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "DSI": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "DI": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ]
+        },
+        "DO": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20 ]
+        },
+        "DSO": {
+          "direction": "output",
+          "bits": [ 21 ]
+        }
+      },
+      "cells": {
+        "$add$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:27$14": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:27.24-27.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "1" ],
+            "Y": [ 26, 27, 28, 29 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24$13": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24.14-24.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "0", "0", "0", "1" ],
+            "Y": [ 30 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47$18": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.25-47.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 31 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66$21": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.26-66.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 32 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81$24": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "1" ],
+            "Y": [ 37 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82$27": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "1" ],
+            "Y": [ 38 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$30": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "1", "1" ],
+            "Y": [ 39 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$33": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 40 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$36": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 41 ]
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86$39": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.19-86.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 42 ]
+          }
+        },
+        "$ge$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$31": {
+          "hide_name": 1,
+          "type": "$ge",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.37-83.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 43 ]
+          }
+        },
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$34": {
+          "hide_name": 1,
+          "type": "$gt",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.37-84.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 44 ]
+          }
+        },
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$37": {
+          "hide_name": 1,
+          "type": "$gt",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.37-85.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 45 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81$26": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 31 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82$29": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 31 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$32": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 43 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$35": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 44 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$38": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "B": [ 45 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86$41": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.19-86.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 32 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$procdff$210": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:17.1-73.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 52, 53, 54, 55 ],
+            "Q": [ 33, 34, 35, 36 ]
+          }
+        },
+        "$procdff$211": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:17.1-73.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 56, 57, 58, 59 ],
+            "Q": [ 22, 23, 24, 25 ]
+          }
+        },
+        "$procmux$105": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.48|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ "1" ],
+            "S": [ 49 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$procmux$117": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.48|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ "0" ],
+            "S": [ 49 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$procmux$129": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.49|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ "1" ],
+            "S": [ 48 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$procmux$138": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.49|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ "0" ],
+            "S": [ 48 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$procmux$147": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.49|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ "1" ],
+            "S": [ 47 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$procmux$153": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.49|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "B": [ "0" ],
+            "S": [ 47 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$procmux$159": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.44|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.9-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ "1" ],
+            "S": [ 46 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$procmux$162": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.44|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.9-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ "0" ],
+            "S": [ 46 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$procmux$165": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:80.12-80.15|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:80.9-80.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 4 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$procmux$168": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24.14-24.26|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24.9-27.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26, 27, 28, 29 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 30 ],
+            "Y": [ 70, 71, 72, 73 ]
+          }
+        },
+        "$procmux$170": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.26-66.38|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.21-69.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70, 71, 72, 73 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 32 ],
+            "Y": [ 74, 75, 76, 77 ]
+          }
+        },
+        "$procmux$172": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:30.9-71.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70, 71, 72, 73 ],
+            "B": [ 74, 75, 76, 77, 78, 79, 80, 81, "0", "0", "0", "0" ],
+            "S": [ 42, 39, 82 ],
+            "Y": [ 83, 84, 85, 86 ]
+          }
+        },
+        "$procmux$174": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.25-47.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.21-50.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70, 71, 72, 73 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 31 ],
+            "Y": [ 78, 79, 80, 81 ]
+          }
+        },
+        "$procmux$177_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:30.9-71.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$procmux$179": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:18.9-18.14|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:18.5-72.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0" ],
+            "B": [ 83, 84, 85, 86 ],
+            "S": [ 3 ],
+            "Y": [ 56, 57, 58, 59 ]
+          }
+        },
+        "$procmux$181": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.26-66.38|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.21-69.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ 69, "0", "0", "0" ],
+            "S": [ 32 ],
+            "Y": [ 87, 88, 89, 90 ]
+          }
+        },
+        "$procmux$183": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000111",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:30.9-71.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 69, "0", "0", "0" ],
+            "S": [ 42, 41, 40, 39, 38, 37, 82 ],
+            "Y": [ 111, 112, 113, 114 ]
+          }
+        },
+        "$procmux$185": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:60.25-60.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:60.21-62.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "1", "1", "0" ],
+            "S": [ 30 ],
+            "Y": [ 91, 92, 93, 94 ]
+          }
+        },
+        "$procmux$188": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:54.25-54.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:54.21-56.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "1", "0", "1", "0" ],
+            "S": [ 30 ],
+            "Y": [ 95, 96, 97, 98 ]
+          }
+        },
+        "$procmux$191": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.25-47.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.21-50.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "0", "1", "0" ],
+            "S": [ 31 ],
+            "Y": [ 99, 100, 101, 102 ]
+          }
+        },
+        "$procmux$194": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:42.25-42.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:42.21-43.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "1", "1", "0", "0" ],
+            "S": [ 30 ],
+            "Y": [ 103, 104, 105, 106 ]
+          }
+        },
+        "$procmux$197": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:37.25-37.37|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:37.21-38.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33, 34, 35, 36 ],
+            "B": [ "0", "1", "0", "0" ],
+            "S": [ 30 ],
+            "Y": [ 107, 108, 109, 110 ]
+          }
+        },
+        "$procmux$202": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:18.9-18.14|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:18.5-72.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 115, 116, "0", "0" ],
+            "B": [ 111, 112, 113, 114 ],
+            "S": [ 3 ],
+            "Y": [ 52, 53, 54, 55 ]
+          }
+        },
+        "$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.19-86.49|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 51 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$procmux$75": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.48|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69 ],
+            "B": [ "1" ],
+            "S": [ 50 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.48|/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.14-86.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ "0" ],
+            "S": [ 50 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$ternary$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:19$12": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:19.18-19.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0" ],
+            "B": [ "0", "1" ],
+            "S": [ 4 ],
+            "Y": [ 115, 116 ]
+          }
+        },
+        "med0": {
+          "hide_name": 0,
+          "type": "$paramod$35b6c50ff1da35637c32669d8c299c654663931a\\MED",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87"
+          },
+          "port_directions": {
+            "BYP": "input",
+            "CLK": "input",
+            "DI": "input",
+            "DO": "output",
+            "DSI": "input"
+          },
+          "connections": {
+            "BYP": [ 68 ],
+            "CLK": [ 2 ],
+            "DI": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+            "DO": [ 13, 14, 15, 16, 17, 18, 19, 20 ],
+            "DSI": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\counter[3:0]": {
+          "hide_name": 1,
+          "bits": [ 56, 57, 58, 59 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:17.1-73.4"
+          }
+        },
+        "$0\\state[3:0]": {
+          "hide_name": 1,
+          "bits": [ 52, 53, 54, 55 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:17.1-73.4"
+          }
+        },
+        "$1\\my_BYP[0:0]": {
+          "hide_name": 1,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$2\\DSO[0:0]": {
+          "hide_name": 1,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$3\\DSO[0:0]": {
+          "hide_name": 1,
+          "bits": [ 65 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$3\\my_BYP[0:0]": {
+          "hide_name": 1,
+          "bits": [ 66 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$4\\DSO[0:0]": {
+          "hide_name": 1,
+          "bits": [ 63 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$4\\my_BYP[0:0]": {
+          "hide_name": 1,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$5\\DSO[0:0]": {
+          "hide_name": 1,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$5\\my_BYP[0:0]": {
+          "hide_name": 1,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$6\\DSO[0:0]": {
+          "hide_name": 1,
+          "bits": [ 117 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$6\\my_BYP[0:0]": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:0.0-0.0"
+          }
+        },
+        "$add$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:27$14_Y": {
+          "hide_name": 1,
+          "bits": [ 26, 27, 28, 29 ],
+          "attributes": {
+          }
+        },
+        "$auto$wreduce.cc:461:run$223": {
+          "hide_name": 1,
+          "bits": [ 115, 116, "0", "0" ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:19.18-19.35"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24$13_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:24.14-24.26"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47$18_Y": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:47.25-47.37"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66$21_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:66.26-66.38"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81$24_Y": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.28"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82$27_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.33"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$30_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.33"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$33_Y": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.33"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$36_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.33"
+          }
+        },
+        "$eq$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86$39_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.19-86.33"
+          }
+        },
+        "$ge$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$31_Y": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.37-83.49"
+          }
+        },
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$34_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.37-84.48"
+          }
+        },
+        "$gt$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$37_Y": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.37-85.48"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81$26_Y": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:81.14-81.44"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82$29_Y": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:82.19-82.49"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83$32_Y": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:83.19-83.49"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84$35_Y": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:84.19-84.48"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85$38_Y": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:85.19-85.48"
+          }
+        },
+        "$logic_and$/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86$41_Y": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:86.19-86.49"
+          }
+        },
+        "$procmux$168_Y": {
+          "hide_name": 1,
+          "bits": [ 70, 71, 72, 73 ],
+          "attributes": {
+          }
+        },
+        "$procmux$170_Y": {
+          "hide_name": 1,
+          "bits": [ 74, 75, 76, 77 ],
+          "attributes": {
+          }
+        },
+        "$procmux$172_Y": {
+          "hide_name": 1,
+          "bits": [ 83, 84, 85, 86 ],
+          "attributes": {
+          }
+        },
+        "$procmux$174_Y": {
+          "hide_name": 1,
+          "bits": [ 78, 79, 80, 81 ],
+          "attributes": {
+          }
+        },
+        "$procmux$177_CMP": {
+          "hide_name": 1,
+          "bits": [ 82 ],
+          "attributes": {
+          }
+        },
+        "$procmux$181_Y": {
+          "hide_name": 1,
+          "bits": [ 87, 88, 89, 90 ],
+          "attributes": {
+          }
+        },
+        "$procmux$183_Y": {
+          "hide_name": 1,
+          "bits": [ 111, 112, 113, 114 ],
+          "attributes": {
+          }
+        },
+        "$procmux$185_Y": {
+          "hide_name": 1,
+          "bits": [ 91, 92, 93, 94 ],
+          "attributes": {
+          }
+        },
+        "$procmux$188_Y": {
+          "hide_name": 1,
+          "bits": [ 95, 96, 97, 98 ],
+          "attributes": {
+          }
+        },
+        "$procmux$191_Y": {
+          "hide_name": 1,
+          "bits": [ 99, 100, 101, 102 ],
+          "attributes": {
+          }
+        },
+        "$procmux$194_Y": {
+          "hide_name": 1,
+          "bits": [ 103, 104, 105, 106 ],
+          "attributes": {
+          }
+        },
+        "$procmux$197_Y": {
+          "hide_name": 1,
+          "bits": [ 107, 108, 109, 110 ],
+          "attributes": {
+          }
+        },
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:2.17-2.20"
+          }
+        },
+        "DI": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:5.23-5.25"
+          }
+        },
+        "DO": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:6.24-6.26"
+          }
+        },
+        "DSI": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:4.17-4.20"
+          }
+        },
+        "DSO": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:7.18-7.21"
+          }
+        },
+        "counter": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:12.13-12.20"
+          }
+        },
+        "my_BYP": {
+          "hide_name": 0,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:11.7-11.13"
+          }
+        },
+        "nRST": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:3.17-3.21"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 33, 34, 35, 36 ],
+          "attributes": {
+            "enum_type": "$enum0",
+            "src": "/cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:10.65-10.70"
+          }
+        }
+      }
+    }
+  }
+}

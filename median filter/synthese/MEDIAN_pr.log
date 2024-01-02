@@ -1,0 +1,351 @@
+Info: Initialising bels...
+Info: Initialising routing graph...
+Info:     imported 2739969 wires and 25465239 pips
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info:   C:port_name:SDATA req_mux:PIN_0 pin_style:0x0
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_7' to pin PIN_AB12 (bel MISTRAL_IO.12.0.1)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_6' to pin PIN_AC12 (bel MISTRAL_IO.16.0.0)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_5' to pin PIN_AF9 (bel MISTRAL_IO.8.0.2)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_4' to pin PIN_AF10 (bel MISTRAL_IO.4.0.3)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_3' to pin PIN_AD11 (bel MISTRAL_IO.2.0.0)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_2' to pin PIN_AD12 (bel MISTRAL_IO.16.0.1)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O_1' to pin PIN_AE11 (bel MISTRAL_IO.4.0.2)
+Info: Constraining IO 'med0.DI_MISTRAL_IB_O' to pin PIN_AC9 (bel MISTRAL_IO.4.0.0)
+Info: Constraining IO 'nRST_MISTRAL_IB_PAD' to pin PIN_AA14 (bel MISTRAL_IO.36.0.0)
+Info: Constraining IO 'med0.DSI_MISTRAL_IB_O' to pin PIN_AE12 (bel MISTRAL_IO.2.0.1)
+Info: Constraining IO 'DSO_MISTRAL_OB_PAD' to pin PIN_Y21 (bel MISTRAL_IO.89.6.1)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_7' to pin PIN_V16 (bel MISTRAL_IO.52.0.0)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_6' to pin PIN_W16 (bel MISTRAL_IO.52.0.1)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_5' to pin PIN_V17 (bel MISTRAL_IO.60.0.0)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_4' to pin PIN_V18 (bel MISTRAL_IO.80.0.0)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_3' to pin PIN_W17 (bel MISTRAL_IO.60.0.1)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_2' to pin PIN_W19 (bel MISTRAL_IO.80.0.1)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD_1' to pin PIN_Y19 (bel MISTRAL_IO.84.0.0)
+Info: Constraining IO 'DO_MISTRAL_OB_PAD' to pin PIN_W20 (bel MISTRAL_IO.89.6.0)
+Info: Constraining IO 'CLK_MISTRAL_IB_PAD' to pin PIN_AA15 (bel MISTRAL_IO.36.0.1)
+
+Info: Device utilisation:
+Info: 	        MISTRAL_COMB:    43/83820     0%
+Info: 	          MISTRAL_FF:    83/167640     0%
+Info: 	          MISTRAL_IO:    20/  472     4%
+Info: 	      MISTRAL_CLKENA:     1/    2    50%
+Info: 	 cyclonev_oscillator:     0/    1     0%
+Info: 	cyclonev_hps_interface_mpu_general_purpose:     0/    1     0%
+Info: 	        MISTRAL_M10K:     0/  553     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 114 cells, random placement wirelen = 13291.
+Info:     at initial placer iter 0, wirelen = 701
+Info:     at initial placer iter 1, wirelen = 661
+Info:     at initial placer iter 2, wirelen = 663
+Info:     at initial placer iter 3, wirelen = 655
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type MISTRAL_FF: wirelen solved = 658, spread = 982, legal = 978; time = 0.00s
+Info:     at iteration #1, type MISTRAL_COMB: wirelen solved = 897, spread = 963, legal = 956; time = 0.00s
+Info:     at iteration #1, type MISTRAL_CLKENA: wirelen solved = 956, spread = 956, legal = 1160; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 634, spread = 809, legal = 1020; time = 0.01s
+Info:     at iteration #2, type MISTRAL_FF: wirelen solved = 1009, spread = 995, legal = 1024; time = 0.00s
+Info:     at iteration #2, type MISTRAL_COMB: wirelen solved = 1017, spread = 1069, legal = 1105; time = 0.00s
+Info:     at iteration #2, type MISTRAL_CLKENA: wirelen solved = 901, spread = 901, legal = 1105; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 657, spread = 734, legal = 1190; time = 0.01s
+Info:     at iteration #3, type MISTRAL_FF: wirelen solved = 1067, spread = 1072, legal = 1107; time = 0.00s
+Info:     at iteration #3, type MISTRAL_COMB: wirelen solved = 1037, spread = 1068, legal = 1123; time = 0.00s
+Info:     at iteration #3, type MISTRAL_CLKENA: wirelen solved = 912, spread = 912, legal = 1116; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 651, spread = 702, legal = 1161; time = 0.01s
+Info:     at iteration #4, type MISTRAL_FF: wirelen solved = 1044, spread = 1053, legal = 1098; time = 0.00s
+Info:     at iteration #4, type MISTRAL_COMB: wirelen solved = 1046, spread = 1062, legal = 1078; time = 0.00s
+Info:     at iteration #4, type MISTRAL_CLKENA: wirelen solved = 872, spread = 872, legal = 1078; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 694, spread = 716, legal = 1114; time = 0.01s
+Info:     at iteration #5, type MISTRAL_FF: wirelen solved = 1014, spread = 1012, legal = 1068; time = 0.00s
+Info:     at iteration #5, type MISTRAL_COMB: wirelen solved = 1072, spread = 1103, legal = 1095; time = 0.00s
+Info:     at iteration #5, type MISTRAL_CLKENA: wirelen solved = 889, spread = 889, legal = 1095; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 667, spread = 698, legal = 1137; time = 0.01s
+Info:     at iteration #6, type MISTRAL_FF: wirelen solved = 1032, spread = 1048, legal = 1085; time = 0.00s
+Info:     at iteration #6, type MISTRAL_COMB: wirelen solved = 1045, spread = 1070, legal = 1076; time = 0.00s
+Info:     at iteration #6, type MISTRAL_CLKENA: wirelen solved = 872, spread = 872, legal = 1076; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 714, spread = 817, legal = 1049; time = 0.01s
+Info: HeAP Placer Time: 0.41s
+Info:   of which solving equations: 0.04s
+Info:   of which spreading cells: 0.03s
+Info:   of which strict legalisation: 0.01s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 2, wirelen = 1020
+Info:   at iteration #4: temp = 0.000000, timing cost = 1, wirelen = 985 
+Info: SA placement time 0.01s
+
+Info: Max frequency for clock 'med0.CLK': 379.65 MHz (PASS at 50.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 17366,  17471) |*********** 
+Info: [ 17471,  17576) |**** 
+Info: [ 17576,  17681) | 
+Info: [ 17681,  17786) | 
+Info: [ 17786,  17891) |* 
+Info: [ 17891,  17996) |** 
+Info: [ 17996,  18101) |* 
+Info: [ 18101,  18206) | 
+Info: [ 18206,  18311) | 
+Info: [ 18311,  18416) |***** 
+Info: [ 18416,  18521) | 
+Info: [ 18521,  18626) |* 
+Info: [ 18626,  18731) |* 
+Info: [ 18731,  18836) |* 
+Info: [ 18836,  18941) | 
+Info: [ 18941,  19046) | 
+Info: [ 19046,  19151) |* 
+Info: [ 19151,  19256) |***** 
+Info: [ 19256,  19361) |******** 
+Info: [ 19361,  19466) |************************************************** 
+Info: Checksum: 0x83952c44
+Info: Preparing LABs for routing...
+Info: Routing globals...
+Info:     routed net 'med0.CLK' using global resources
+Info: Running router2...
+Info: Setting up routing resources...
+Info: Running main router loop...
+Info:     iter=1 wires=1355 overused=46 overuse=54 archfail=NA
+Info:     iter=2 wires=1379 overused=28 overuse=30 archfail=NA
+Info:     iter=3 wires=1395 overused=19 overuse=20 archfail=NA
+Info:     iter=4 wires=1394 overused=11 overuse=11 archfail=NA
+Info:     iter=5 wires=1403 overused=4 overuse=4 archfail=NA
+Info:     iter=6 wires=1405 overused=7 overuse=7 archfail=NA
+Info:     iter=7 wires=1395 overused=5 overuse=5 archfail=NA
+Info:     iter=8 wires=1395 overused=5 overuse=5 archfail=NA
+Info:     iter=9 wires=1397 overused=3 overuse=3 archfail=NA
+Info:     iter=10 wires=1396 overused=4 overuse=4 archfail=NA
+Info:     iter=11 wires=1397 overused=3 overuse=3 archfail=NA
+Info:     iter=12 wires=1398 overused=3 overuse=3 archfail=NA
+Info:     iter=13 wires=1400 overused=2 overuse=2 archfail=NA
+Info:     iter=14 wires=1400 overused=2 overuse=2 archfail=NA
+Info:     iter=15 wires=1403 overused=2 overuse=2 archfail=NA
+Info:     iter=16 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=17 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=18 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=19 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=20 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=21 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=22 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=23 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=24 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=25 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=26 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=27 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=28 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=29 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=30 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=31 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=32 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=33 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=34 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=35 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=36 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=37 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=38 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=39 wires=1404 overused=1 overuse=1 archfail=NA
+Info:     iter=40 wires=1410 overused=1 overuse=1 archfail=NA
+Info:     iter=41 wires=1411 overused=0 overuse=0 archfail=0
+Info: Router2 time 0.34s
+Info: Running router1 to check that route is legal...
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 0 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:          0 |        0          0 |    0     0 |         0|       0.00       0.00|
+Info: Routing complete.
+Info: Router1 time 0.00s
+Info: Checksum: 0x657ad573
+
+Info: Critical path report for clock 'med0.CLK' (posedge -> posedge):
+Info: curr total
+Info:  0.7  0.7  Source med0.DO_MISTRAL_FF_Q_6.Q
+Info:  1.4  2.1    Net med0.DO[1] (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.A
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:6.39-6.41
+Info:  1.1  3.2  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.2    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.0  3.2  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.2    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.0  3.2  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.2    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.0  3.3  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.3    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.0  3.3  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.3    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.0  3.3  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI_MISTRAL_ALUT_ARITH_CO.CO
+Info:  0.0  3.3    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO_CI (52,1) -> (52,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO.CI
+Info:                Defined in:
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MEDIAN.sv:15.29-15.87
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MCE.sv:6.23-6.26
+Info:                  /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese/../src/MED.sv:12.24-12.82
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/arith_alm_map.v:58.7-63.6
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_sim.v:287.112-287.114
+Info:  0.4  3.7  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C_MISTRAL_ALUT_ARITH_SO.SO
+Info:  0.3  4.0    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q_C[2] (52,1) -> (51,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q.C
+Info:                Defined in:
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_map.v:7.19-7.20
+Info:  0.1  4.1  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT3_Q.Q
+Info:  0.6  4.7    Net med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_B[4] (51,1) -> (51,1)
+Info:                Sink med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT5_E_4.E
+Info:                Defined in:
+Info:                  /comelec/softs/opt/yosys/current/bin/../share/yosys/intel_alm/common/alm_map.v:7.19-7.20
+Info:  0.1  4.8  Source med0.DO_MISTRAL_FF_Q_ENA_MISTRAL_ALUT5_Q_E_MISTRAL_ALUT5_E_4.Q
+Info:  1.7  6.5    Net med0.R[0]_MISTRAL_FF_Q_DATAIN[2] (51,1) -> (51,1)
+Info:                Sink med0.R[0]_MISTRAL_FF_Q_5$ROUTETHRU.A
+Info:  0.1  6.6  Source med0.R[0]_MISTRAL_FF_Q_5$ROUTETHRU.Q
+Info:  0.0  6.6    Net med0.R[0]_MISTRAL_FF_Q_5$ROUTETHRU$conn$Q (51,1) -> (51,1)
+Info:                Sink med0.R[0]_MISTRAL_FF_Q_5.DATAIN
+Info: -0.2  6.4  Setup med0.R[0]_MISTRAL_FF_Q_5.DATAIN
+Info: 2.5 ns logic, 4.0 ns routing
+
+Info: Max frequency for clock 'med0.CLK': 155.62 MHz (PASS at 50.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 13574,  13851) |* 
+Info: [ 13851,  14128) | 
+Info: [ 14128,  14405) | 
+Info: [ 14405,  14682) |* 
+Info: [ 14682,  14959) |********* 
+Info: [ 14959,  15236) |**** 
+Info: [ 15236,  15513) |** 
+Info: [ 15513,  15790) |* 
+Info: [ 15790,  16067) |** 
+Info: [ 16067,  16344) |** 
+Info: [ 16344,  16621) | 
+Info: [ 16621,  16898) |**** 
+Info: [ 16898,  17175) | 
+Info: [ 17175,  17452) | 
+Info: [ 17452,  17729) |* 
+Info: [ 17729,  18006) |**** 
+Info: [ 18006,  18283) |***** 
+Info: [ 18283,  18560) |******* 
+Info: [ 18560,  18837) |*********************** 
+Info: [ 18837,  19114) |************************* 
+
+Info: Program finished normally.

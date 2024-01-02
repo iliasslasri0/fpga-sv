@@ -1,0 +1,151 @@
+# //  Questa Sim-64
+# //  Version 2023.2_1 linux_x86_64 May 12 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim MED_tb 
+# Start time: 11:15:40 on Dec 18,2023
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 11:15:40 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+run -all
+# No Design Loaded!
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:16:19 on Dec 18,2023
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 11:16:19 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+run -all
+# No Design Loaded!
+ls
+# de1Soc.qsf
+# Makefile
+# MCE_prep.json
+# MCE_syn.json
+# MCE_syn.log
+# MCE_syn.v
+# synthesis.tcl
+# transcript
+pwd
+# /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/synthese
+cd ../simulation
+pwd
+# /cal/exterieurs/lasri-22/Desktop/iliass-lasri/median/simulation
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:16:55 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error: ../src/MED_TB.sv(12): Module 'MED' is not defined.
+#  For instance 'I_MED' at path 'MED_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 11:16:56 on Dec 18,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:17:39 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error: ../src/MED_TB.sv(12): Module 'MED' is not defined.
+#  For instance 'I_MED' at path 'MED_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 11:17:40 on Dec 18,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:18:12 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error: ../src/MED.sv(12): (vopt-2137) Instantiating 'mce0' has potential unbounded recursion.
+#         Region: MED_tb.I_MED.mce0.mce0
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 11:18:12 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:19:57 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): ../src/MED_TB.sv(12): (vopt-2912) Port 'BYP' not found in module 'MED' (3rd connection).
+# ** Error (suppressible): ../src/MED_TB.sv(12): (vopt-2912) Port 'CLK' not found in module 'MED' (4th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 11:19:57 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:20:30 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): ../src/MED_TB.sv(12): (vopt-2912) Port 'BYP' not found in module 'MED' (3rd connection).
+# ** Error (suppressible): ../src/MED_TB.sv(12): (vopt-2912) Port 'CLK' not found in module 'MED' (4th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 11:20:30 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:21:03 on Dec 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.MED_tb(fast)
+# Loading work.MED(fast)
+# Loading work.MCE(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'A'. The port definition is at: ../src/MCE.sv(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MED_tb/I_MED/mce0 File: ../src/MED.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'B'. The port definition is at: ../src/MCE.sv(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MED_tb/I_MED/mce0 File: ../src/MED.sv Line: 12
+# ** Error (suppressible): (vsim-3839) Variable '/MED_tb/I_MED/MIN', driven via a port connection, is multiply driven. See ../src/MED.sv(12).
+#    Time: 0 ns  Iteration: 0  Instance: /MED_tb/I_MED File: ../src/MED.sv Line: 26
+# Error loading design
+# End time: 11:21:03 on Dec 18,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:21:42 on Dec 18,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.MED_tb(fast)
+# Loading work.MED(fast)
+# Loading work.MCE(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/MED_tb/I_MED/MIN', driven via a port connection, is multiply driven. See ../src/MED.sv(12).
+#    Time: 0 ns  Iteration: 0  Instance: /MED_tb/I_MED File: ../src/MED.sv Line: 26
+# Error loading design
+# End time: 11:21:43 on Dec 18,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim MED_tb
+# vsim MED_tb 
+# Start time: 11:23:14 on Dec 18,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.MED_tb(fast)
+# Loading work.MED(fast)
+# Loading work.MCE(fast)
