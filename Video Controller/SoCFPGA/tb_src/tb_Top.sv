@@ -38,15 +38,8 @@ Top #(
 
 screen #(.mode(13),.X(160),.Y(90)) screen0(.video_ifs(video_if0));
 // Générateur d'horloge à 50Mhz pour générer le signal FPGA_CLK1_50
-always #25 FPGA_CLK1_50 = ~FPGA_CLK1_50; 
+always #10ns FPGA_CLK1_50 = ~FPGA_CLK1_50; 
 
-// Un processus simulant une action d'initialisation utilisant le bouton KEY[0] 
-// initial begin
-//     KEY[0] = 1;
-//     #(128ns) 
-//     KEY[0] = 0;
-//     #(128ns)
-//     KEY[0] = 1;
-// end
+
 
 endmodule

@@ -1,7 +1,8 @@
 module vga #(parameter HDISP = 800, parameter VDISP = 480)(
     input logic pixel_clk,
     input logic pixel_rst,
-    video_if.master video_ifm
+    video_if.master video_ifm,
+    wshb_if.master wshb_ifm // interface permettra d'échanger des données de 32 bits avec une fréquence de bus de 100MHz
 );
 
 // Les constantes pour les timings seront fournies via des paramètres locaux
@@ -15,43 +16,85 @@ localparam VBP = 29;
 localparam H = HDISP + HFP + HPULSE + HBP;
 localparam V = VDISP + VFP + VPULSE + VBP;
 // // Counters
-logic [$clog2(V) - 1: 0] VCounter; // Vertical Counter (lignes)
-logic [$clog2(H) - 1: 0] HCounter; // Horizontal Counter (Pixels)
+logic [$clog2(V) - 1: 0] VCounter = '0; // Vertical Counter (lignes)
+logic [$clog2(H) - 1: 0] HCounter = '0; // Horizontal Counter (Pixels)
 
 // le signal video_ifm.CLK sera simplement  pixel_clk
 assign video_ifm.CLK = pixel_clk;
 
-// Compteur de pixel
-always_ff@(posedge pixel_clk)begin
-    if(pixel_rst || (HCounter == H - 1))
-        HCounter <= 0;
-    else 
-        HCounter <= HCounter + 1;
+assign wshb_ifm.sel = 4'b1111;
+assign wshb_ifm.we	= 1'b0;
+assign wshb_ifm.cti = '0;
+assign wshb_ifm.bte = '0;
+assign wshb_ifm.stb = '1;
+
+// ---------------------Lecture en SDRAM -------------------------
+// ----------------------------------------------------------------
+assign wshb_ifm.cyc = 1'b1;
+logic [31:0]pixel = '0;
+
+always_ff@(posedge wshb_ifm.clk)
+    if (wshb_ifm.ack)
+        pixel <= wshb_ifm.dat_sm;
+
+
+always_ff @( posedge wshb_ifm.clk ) begin
+    if ( wshb_ifm.rst )begin
+        wshb_ifm.adr <= '0;
+        end
+    else if (wshb_ifm.ack) begin // && !wfull
+        wshb_ifm.adr <= (wshb_ifm.adr == 4*(HDISP*HCounter+VCounter)) ? 0: wshb_ifm.adr + 4;
+    end
 end
 
+
 //Compteur de lignes
-always_ff@(posedge pixel_clk)begin
-    if(pixel_rst || (VCounter == V))
+always_ff@(posedge wshb_ifm.clk)begin
+    if(wshb_ifm.rst || (VCounter == VDISP))
         VCounter <= 0;
-    else if ((HCounter == H - 1))
+    else if ((HCounter == H - 1) && wshb_ifm.ack && !video_ifm.BLANK )
         VCounter <= VCounter + 1; // Si on est en fin de ligne (le dernier pixel)
                                                     // passer à la ligne suivante
     end
 
-// Les  signaux de synchronisation  (video_ifm.HS, video_ifm.VS, video_ifm.BLANK)
-always_ff@(posedge pixel_clk)begin
-    if(pixel_rst)begin
-        video_ifm.HS <= 1;
-        video_ifm.VS <= 1;
+
+// Compteur de pixel
+always_ff@(posedge wshb_ifm.clk)begin
+    if(wshb_ifm.rst || (HCounter == HDISP - 1))
+        HCounter <= 0;
+    else if (wshb_ifm.ack && !video_ifm.BLANK )
+        HCounter <= HCounter + 1;
+end
+
+
+always_ff @( posedge wshb_ifm.clk ) begin
+    if (wshb_ifm.rst)
         video_ifm.BLANK <= 1;
-        video_ifm.RGB <= 24'h000000;
-    end
-    else 
-        video_ifm.HS <= !(HCounter >= HFP && HCounter < HFP + HPULSE);
-        video_ifm.VS <= !(VCounter >= VFP && VCounter < VFP + VPULSE);
+    else
         video_ifm.BLANK <= ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP)));
-        if( ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP))) )begin
-            video_ifm.RGB <= ((HCounter - (H - HDISP)) % 16) && ((VCounter - (V - VDISP)) % 16) ? 24'h000000 : 24'hFFFFFF;
-        end
-    end
+end
+
+//---------------Ecriture en FIFO --------------
+// ---------------------------------------------
+// async_fifo
+//   #(
+//       .DATA_WIDTH(32), 
+//       .DEPTH_WIDTH(8),
+//       .ALMOST_FULL_THRESHOLD(255)
+//   )my_async_fifo
+//   (
+//       .rst(wshb_ifm.rst),
+//       .rclk(), // TODO
+//       .read(read),
+//       .rdata(rdata), 
+//       .rempty(rempty),
+//       .wclk(wshb_ifm.clk),
+//       .wdata(wdata), 
+//       .write(write),
+//       .wfull(wfull),
+//       .walmost_full(walmost_full)
+//    );
+
+// assign wdata = (wshb_ifm.ack && !wfull) ? wshb_ifm.dat_sm : '0;
+
 endmodule

@@ -62,14 +62,6 @@ assign wshb_if_stream.rty =  1'b0 ;
 // pour l'instant
 // A SUPPRIMER PLUS TARD
 //=============================
-assign wshb_if_sdram.stb  = 1'b0;
-assign wshb_if_sdram.cyc  = 1'b0;
-assign wshb_if_sdram.we   = 1'b0;
-assign wshb_if_sdram.adr  = '0  ;
-assign wshb_if_sdram.dat_ms = '0 ;
-assign wshb_if_sdram.sel = '0 ;
-assign wshb_if_sdram.cti = '0 ;
-assign wshb_if_sdram.bte = '0 ;
 
 //--------------------------
 //------- Code Eleves ------
@@ -78,27 +70,6 @@ assign wshb_if_sdram.bte = '0 ;
 // Recopier la valeur  du signal KEY[0]  vers la led LED[0]
 assign LED[0] = KEY[0];
 
-// // Clignoter le signal LED[1] à  1Hz en utilisant l'horloge sys_clk
-// `ifdef SIMULATION
-//   localparam hcmpt=50 ;
-// `else
-//   localparam hcmpt=50000000 ;
-// `endif
-
-// logic [26:0]counter = 0;
-// always_ff@(posedge sys_clk) 
-//     begin
-//         if(sys_rst) begin
-//             counter <= 0;
-//             LED[1] <= 0;
-//         end
-//         else if(counter == hcmpt)
-//             begin 
-//                 counter <= 0;
-//                 LED[1] <= !(LED[1]);
-//             end
-//         else counter <= counter + 1;
-//     end
 
 // // Mécanisme de rééinitialisation
 logic Q;
@@ -116,42 +87,13 @@ always_ff@(posedge pixel_clk or posedge sys_rst)begin
 
 end
 
-// `ifdef SIMULATION
-//   localparam hcmpt2= 16;
-// `else
-//   localparam hcmpt2= 16000000;
-// `endif
-
-// // Clignoter le signal LED[2] à  1Hz en utilisant l'horloge pixel_clk
-// logic [26:0]counter2 = 0;
-// always_ff@(posedge pixel_clk)
-//     begin
-//         if(pixel_rst) begin 
-//             counter2 <= 0;
-//             LED[2] <= 0;
-//         end
-//         else if(counter2 == hcmpt2)
-//             begin 
-//                 counter2 <= 0;
-//                 LED[2] <= !(LED[2]);
-//             end
-//         else counter2 <= counter2 + 1;
-//     end
-
-
-// // To get rid of Warning in synthesis
-// assign LED[3] = 0;
-// assign LED[4] = 0;
-// assign LED[5] = 0;
-// assign LED[6] = 0;
-// assign LED[7] = 0;
-
 // instance de vga : 
 vga #(.HDISP(HDISP), .VDISP(VDISP))
     my_vga(
     .pixel_clk(pixel_clk),
     .pixel_rst(pixel_rst),
-    .video_ifm(video_ifm)
+    .video_ifm(video_ifm),
+    .wshb_ifm(wshb_if_sdram)
     );
 
 endmodule
