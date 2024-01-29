@@ -32,7 +32,7 @@ Top #(
     .HDISP(160),
     .VDISP(90)
 ) myTop (.*,
-    .video_ifm(video_if0.master)
+    .video_ifm(video_if0)
 );
 
 

@@ -21,7 +21,7 @@ async_fifo
   )my_async_fifo
   (
       .rst(wshb_ifm.rst),
-      .rclk(pixel_clk), // TODO
+      .rclk(pixel_clk),
       .read(read),
       .rdata(rdata), 
       .rempty(rempty),
@@ -75,7 +75,7 @@ end
 always_ff@(posedge wshb_ifm.clk)begin
     if(wshb_ifm.rst || (VCounter == VDISP))
         VCounter <= 0;
-    else if ((HCounter == H - 1) && wshb_ifm.ack && !video_ifm.BLANK )
+    else if ((HCounter == H - 1) && wshb_ifm.ack)
         VCounter <= VCounter + 1; // Si on est en fin de ligne (le dernier pixel)
                                                     // passer à la ligne suivante
     end
@@ -85,7 +85,7 @@ always_ff@(posedge wshb_ifm.clk)begin
 always_ff@(posedge wshb_ifm.clk)begin
     if(wshb_ifm.rst || (HCounter == HDISP - 1))
         HCounter <= 0;
-    else if (wshb_ifm.ack && !video_ifm.BLANK )
+    else if (wshb_ifm.ack)
         HCounter <= HCounter + 1;
 end
 
@@ -101,14 +101,44 @@ end
 // ---------------------------------------------
 
 always_ff@(posedge wshb_ifm.clk)
-if (wshb_ifm.ack)
-    wdata <= wshb_ifm.dat_sm;
+    if (wshb_ifm.ack)
+        wdata <= wshb_ifm.dat_sm;
 
 
 /// ------------- Lecture de la FIFO ----------------
 /// --------------------------------------------------
-always_ff@(posedge pixel_clk)begin
-    
+
+// Rééchantillonnage
+logic DA, DB, wfull_pixel_clk;
+always_ff @( wshb_ifm.clk ) begin
+    DA <= wfull;
 end
+
+always_ff @( pixel_clk ) begin
+    DB <= DA;
+    wfull_pixel_clk <= DB;
+end
+
+logic was_full; // était remplie au mois une fois
+always_ff@(posedge pixel_clk)begin
+    if (wfull_pixel_clk) 
+        was_full <= 1;
+end
+
+always_ff@(posedge pixel_clk)begin
+    if(pixel_rst)begin
+        video_ifm.HS <= 1;
+        video_ifm.VS <= 1;
+        video_ifm.BLANK <= 1;
+    end
+    else begin
+        video_ifm.HS <= !(HCounter >= HFP && HCounter < HFP + HPULSE);
+        video_ifm.VS <= !(VCounter >= VFP && VCounter < VFP + VPULSE);
+        video_ifm.BLANK <= ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP)));
+    end
+end
+
+assign read = was_full && video_ifm.BLANK && !rempty;
+assign video_ifm.RGB = rdata;
 
 endmodule
