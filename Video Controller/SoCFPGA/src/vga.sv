@@ -5,6 +5,33 @@ module vga #(parameter HDISP = 800, parameter VDISP = 480)(
     wshb_if.master wshb_ifm // interface permettra d'échanger des données de 32 bits avec une fréquence de bus de 100MHz
 );
 
+// ------------ FIFO INSTANCIATION -----
+// ------------------------------------
+logic write, read;
+logic wfull, walmost_full;
+logic rempty;
+assign write = wshb_ifm.ack;
+logic [31:0] wdata;
+logic [31:0] rdata;
+async_fifo
+  #(
+      .DATA_WIDTH(32), 
+      .DEPTH_WIDTH(8),
+      .ALMOST_FULL_THRESHOLD(255)
+  )my_async_fifo
+  (
+      .rst(wshb_ifm.rst),
+      .rclk(pixel_clk), // TODO
+      .read(read),
+      .rdata(rdata), 
+      .rempty(rempty),
+      .wclk(wshb_ifm.clk),
+      .wdata(wdata), 
+      .write(write),
+      .wfull(wfull),
+      .walmost_full(walmost_full)
+   );
+
 // Les constantes pour les timings seront fournies via des paramètres locaux
 localparam HFP = 40;
 localparam HPULSE = 48;
@@ -33,16 +60,12 @@ assign wshb_ifm.stb = '1;
 assign wshb_ifm.cyc = 1'b1;
 logic [31:0]pixel = '0;
 
-always_ff@(posedge wshb_ifm.clk)
-    if (wshb_ifm.ack)
-        pixel <= wshb_ifm.dat_sm;
-
-
+/// controlleur de l'adresse wshb_ifm.adr
 always_ff @( posedge wshb_ifm.clk ) begin
     if ( wshb_ifm.rst )begin
         wshb_ifm.adr <= '0;
         end
-    else if (wshb_ifm.ack) begin // && !wfull
+    else if (wshb_ifm.ack && !wfull) begin
         wshb_ifm.adr <= (wshb_ifm.adr == 4*(HDISP*HCounter+VCounter)) ? 0: wshb_ifm.adr + 4;
     end
 end
@@ -66,7 +89,7 @@ always_ff@(posedge wshb_ifm.clk)begin
         HCounter <= HCounter + 1;
 end
 
-
+// BLANKING
 always_ff @( posedge wshb_ifm.clk ) begin
     if (wshb_ifm.rst)
         video_ifm.BLANK <= 1;
@@ -76,25 +99,16 @@ end
 
 //---------------Ecriture en FIFO --------------
 // ---------------------------------------------
-// async_fifo
-//   #(
-//       .DATA_WIDTH(32), 
-//       .DEPTH_WIDTH(8),
-//       .ALMOST_FULL_THRESHOLD(255)
-//   )my_async_fifo
-//   (
-//       .rst(wshb_ifm.rst),
-//       .rclk(), // TODO
-//       .read(read),
-//       .rdata(rdata), 
-//       .rempty(rempty),
-//       .wclk(wshb_ifm.clk),
-//       .wdata(wdata), 
-//       .write(write),
-//       .wfull(wfull),
-//       .walmost_full(walmost_full)
-//    );
 
-// assign wdata = (wshb_ifm.ack && !wfull) ? wshb_ifm.dat_sm : '0;
+always_ff@(posedge wshb_ifm.clk)
+if (wshb_ifm.ack)
+    wdata <= wshb_ifm.dat_sm;
+
+
+/// ------------- Lecture de la FIFO ----------------
+/// --------------------------------------------------
+always_ff@(posedge pixel_clk)begin
+    
+end
 
 endmodule
