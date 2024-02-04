@@ -110,18 +110,19 @@ always_ff@(posedge wshb_ifm.clk)
 
 // Rééchantillonnage
 logic DA, DB, wfull_pixel_clk;
-always_ff @( wshb_ifm.clk ) begin
+always_ff @(posedge wshb_ifm.clk ) begin
     DA <= wfull;
 end
 
-always_ff @( pixel_clk ) begin
+always_ff @(posedge pixel_clk ) begin
     DB <= DA;
     wfull_pixel_clk <= DB;
 end
 
 logic was_full; // était remplie au mois une fois
 always_ff@(posedge pixel_clk)begin
-    if (wfull_pixel_clk) 
+    if (wshb_ifm.rst) was_full <= 0; 
+    else if (wfull_pixel_clk) 
         was_full <= 1;
 end
 
