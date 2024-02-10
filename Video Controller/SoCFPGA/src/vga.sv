@@ -49,97 +49,105 @@ logic [$clog2(H) - 1: 0] HCounter = '0; // Horizontal Counter (Pixels)
 // le signal video_ifm.CLK sera simplement  pixel_clk
 assign video_ifm.CLK = pixel_clk;
 
-assign wshb_ifm.sel = 4'b1111;
+assign wshb_ifm.sel = '1;
 assign wshb_ifm.we	= 1'b0;
 assign wshb_ifm.cti = '0;
 assign wshb_ifm.bte = '0;
-assign wshb_ifm.stb = '1;
 
 // ---------------------Lecture en SDRAM -------------------------
 // ----------------------------------------------------------------
 assign wshb_ifm.cyc = 1'b1;
-logic [31:0]pixel = '0;
 
 /// controlleur de l'adresse wshb_ifm.adr
-always_ff @( posedge wshb_ifm.clk ) begin
-    if ( wshb_ifm.rst )begin
-        wshb_ifm.adr <= '0;
+logic [$clog2(H)-1:0]x = 0;
+logic [$clog2(V)-1:0]y = 0;
+
+assign wshb_ifm.adr = 4*(HDISP * y + x);
+
+always_ff@(posedge wshb_ifm.clk)
+begin
+    if(wshb_ifm.rst)begin
+        x <= 0;
+        y <= 0;
         end
-    else if (wshb_ifm.ack && !wfull) begin
-        wshb_ifm.adr <= (wshb_ifm.adr == 4*(HDISP*HCounter+VCounter)) ? 0: wshb_ifm.adr + 4;
+    else if (wshb_ifm.ack)
+        begin
+            if (x == HDISP - 1)
+                begin
+                    x <= 0;
+                    if (y == VDISP -1)
+                        y <= 0;
+                    else
+                        y <= y + 1;
+                end
+            else
+                x <= x + 1;
     end
 end
 
 
 //Compteur de lignes
-always_ff@(posedge wshb_ifm.clk)begin
-    if(wshb_ifm.rst || (VCounter == VDISP))
+always_ff@(posedge pixel_clk)begin
+    if(pixel_rst || (VCounter == V))
         VCounter <= 0;
-    else if ((HCounter == H - 1) && wshb_ifm.ack)
+    else if ((HCounter == H - 1))
         VCounter <= VCounter + 1; // Si on est en fin de ligne (le dernier pixel)
                                                     // passer à la ligne suivante
     end
 
 
 // Compteur de pixel
-always_ff@(posedge wshb_ifm.clk)begin
-    if(wshb_ifm.rst || (HCounter == HDISP - 1))
+always_ff@(posedge pixel_clk)begin
+    if(pixel_rst || (HCounter == H - 1))
         HCounter <= 0;
-    else if (wshb_ifm.ack)
+    else
         HCounter <= HCounter + 1;
 end
 
-// BLANKING
-always_ff @( posedge wshb_ifm.clk ) begin
-    if (wshb_ifm.rst)
-        video_ifm.BLANK <= 1;
-    else
-        video_ifm.BLANK <= ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP)));
-end
 
 //---------------Ecriture en FIFO --------------
 // ---------------------------------------------
-
-always_ff@(posedge wshb_ifm.clk)
-    if (wshb_ifm.ack)
-        wdata <= wshb_ifm.dat_sm;
-
+assign wdata = wshb_ifm.dat_sm;
 
 /// ------------- Lecture de la FIFO ----------------
 /// --------------------------------------------------
 
-// Rééchantillonnage
-logic DA, DB, wfull_pixel_clk;
-always_ff @(posedge wshb_ifm.clk ) begin
-    DA <= wfull;
+// Rééchantillonnage wshb_ifm.clk to pixel_clk
+
+logic D;
+
+always_ff @(posedge wshb_ifm.clk)
+begin
+    if (wshb_ifm.rst) D <= '0;
+    else if (!walmost_full) D <= '1;
 end
 
+assign wshb_ifm.stb = D & !wfull;
+
+logic DA, wfull_pixel_clk;
 always_ff @(posedge pixel_clk ) begin
-    DB <= DA;
-    wfull_pixel_clk <= DB;
+    if (pixel_rst)begin
+            DA <= '0;
+            wfull_pixel_clk <= '0;
+        end
+    else begin 
+        DA <= wfull;
+        wfull_pixel_clk <= DA;
+        end
 end
 
 logic was_full; // était remplie au mois une fois
 always_ff@(posedge pixel_clk)begin
-    if (wshb_ifm.rst) was_full <= 0; 
+    if (pixel_rst) was_full <= 0; 
     else if (wfull_pixel_clk) 
         was_full <= 1;
 end
 
-always_ff@(posedge pixel_clk)begin
-    if(pixel_rst)begin
-        video_ifm.HS <= 1;
-        video_ifm.VS <= 1;
-        video_ifm.BLANK <= 1;
-    end
-    else begin
-        video_ifm.HS <= !(HCounter >= HFP && HCounter < HFP + HPULSE);
-        video_ifm.VS <= !(VCounter >= VFP && VCounter < VFP + VPULSE);
-        video_ifm.BLANK <= ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP)));
-    end
-end
+assign video_ifm.HS = !(HCounter >= HFP && HCounter < HFP + HPULSE);
+assign video_ifm.VS = !(VCounter >= VFP && VCounter < VFP + VPULSE);
+assign video_ifm.BLANK = ((HCounter >= (H - HDISP)) && (VCounter >= (V - VDISP)));
 
-assign read = was_full && video_ifm.BLANK && !rempty;
-assign video_ifm.RGB = rdata;
+assign read = video_ifm.BLANK & was_full & !rempty;
+assign video_ifm.RGB = rdata[23:0];
 
 endmodule
