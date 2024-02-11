@@ -34,6 +34,8 @@ sys_pll  sys_pll_inst(
 //=============================
 wshb_if #( .DATA_BYTES(4)) wshb_if_sdram  (sys_clk, sys_rst);
 wshb_if #( .DATA_BYTES(4)) wshb_if_stream (sys_clk, sys_rst);
+wshb_if #( .DATA_BYTES(4)) wshb_if_vga (sys_clk, sys_rst);
+wshb_if #( .DATA_BYTES(4)) wshb_if_mire  (sys_clk, sys_rst);
 
 //=============================
 //  Le support matériel
@@ -47,25 +49,6 @@ hw_support hw_support_inst (
     .KEY      ( KEY )
  );
 
-//=============================
-// On neutralise l'interface
-// du flux video pour l'instant
-// A SUPPRIMER PLUS TARD
-//=============================
-assign wshb_if_stream.ack = 1'b1;
-assign wshb_if_stream.dat_sm = '0 ;
-assign wshb_if_stream.err =  1'b0 ;
-assign wshb_if_stream.rty =  1'b0 ;
-
-//=============================
-// On neutralise l'interface SDRAM
-// pour l'instant
-// A SUPPRIMER PLUS TARD
-//=============================
-
-//--------------------------
-//------- Code Eleves ------
-//--------------------------
 
 // Recopier la valeur  du signal KEY[0]  vers la led LED[0]
 assign LED[0] = KEY[0];
@@ -93,7 +76,19 @@ vga #(.HDISP(HDISP), .VDISP(VDISP))
     .pixel_clk(pixel_clk),
     .pixel_rst(pixel_rst),
     .video_ifm(video_ifm),
-    .wshb_ifm(wshb_if_sdram)
+    .wshb_ifm(wshb_if_vga)
     );
+
+// instance de mire : 
+mire #(.HDISP(HDISP), .VDISP(VDISP)) 
+    my_mire(
+        .wshb_if(wshb_if_mire)
+        );
+
+// instance de wshb_intercon :
+wshb_intercon my_wshb_intercon (.wshb_ifs_mire(wshb_if_mire), 
+                            .wshb_ifs_vga(wshb_if_vga),
+                            .wshb_ifm(wshb_if_sdram)
+                            );
 
 endmodule

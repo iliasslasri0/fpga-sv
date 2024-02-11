@@ -56,7 +56,6 @@ assign wshb_ifm.bte = '0;
 
 // ---------------------Lecture en SDRAM -------------------------
 // ----------------------------------------------------------------
-assign wshb_ifm.cyc = 1'b1;
 
 /// controlleur de l'adresse wshb_ifm.adr
 logic [$clog2(H)-1:0]x = 0;
@@ -113,8 +112,8 @@ assign wdata = wshb_ifm.dat_sm;
 /// --------------------------------------------------
 
 // Rééchantillonnage wshb_ifm.clk to pixel_clk
-
 logic D;
+assign wshb_ifm.cyc = wshb_ifm.stb;
 
 always_ff @(posedge wshb_ifm.clk)
 begin
